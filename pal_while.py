@@ -16,20 +16,12 @@ def main(palindrome):
         for p in range(len(pal)):
             if pal[p] != pal[len(pal)-p-1]:
                 palindrome = False
-        if palindrome == True:
-            print(f'{pal} is a palindrome.')
+        if palindrome == False:
+            print(f'{pal} is not a palindrome.')
         else:
-            print(f'{pal} is not a palidrome.')
+            print(f"{pal} is a palindrome.")
+#        elif palindrome == False:
+#            print(f'{pal} is not a palidrome.')
 
 if __name__ == "__main__":
     main(palindrome)
-
-'''
-for pal in pal_list:
-            for p in range(len(pal)//2):
-                if pal[p] != pal[len(pal) - p -1]:
-                    palindrome = False
-                    print(f"{pal} is not a palidrome.")
-                else:
-                    print(f"{pal} is a palindrome.")
-'''
