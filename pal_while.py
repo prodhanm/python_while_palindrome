@@ -1,8 +1,8 @@
 pal_list = ["anna", "racecar", "control", "kayak"]
-palindrome = True
+palindrome = False
 
-def is_palindrome(pal_list,palindrome):
-    while palindrome:
+def is_palindrome(pal_list):
+    while True:
         in_word = str(input("Enter a word: "))
         pal_list.append(in_word.lower())
         print(pal_list)
@@ -12,16 +12,14 @@ def is_palindrome(pal_list,palindrome):
     return pal_list
 
 def main(palindrome):    
-    for pal in is_palindrome(pal_list,palindrome):
+    for pal in is_palindrome(pal_list):
         for p in range(len(pal)):
-            if pal[p] != pal[len(pal)-p-1]:
-                palindrome = False
+            if pal[p] == pal[len(pal)-p-1]:
+                palindrome = True
         if palindrome == False:
             print(f'{pal} is not a palindrome.')
         else:
             print(f"{pal} is a palindrome.")
-#        elif palindrome == False:
-#            print(f'{pal} is not a palidrome.')
 
 if __name__ == "__main__":
     main(palindrome)
