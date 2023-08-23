@@ -13,7 +13,9 @@ A palindrome is a word, where it is a mirror reflection of each letter of the wo
         The word is evenly halved without a letter seperator. 
 
 The way this is expressed in the program, is via the nested for loop, where we take the range of the length of the word is then individually halved in the list:
+
                     for w in range(len(word)//2)
+                    
 To note, if this is not done, then the result is either all of the words in the list are palindromes or all are not, which is why the words need to be halved by their length. Another purpose of the list, is to append to the list, as to then provide the program with a way to check the values.
 
 The use of the while loop, was the most practical approach to appending to the list. The program utilizes the input function (input()) to enter the word. The word then got appended to the list and then another variable, that stores a question asking to see if the programmer would input anymore word. A conditional logic of no, would break the loop. 
