@@ -1,5 +1,4 @@
 pal_list = ["anna", "racecar", "control", "kayak"]
-palindrome = False
 
 def is_palindrome(pal_list):
     while True:
@@ -11,15 +10,14 @@ def is_palindrome(pal_list):
             break
     return pal_list
 
-def main(palindrome):    
+def main():    
     for pal in is_palindrome(pal_list):
-        for p in range(len(pal)):
+        for p in range(len(pal)//2):
             if pal[p] == pal[len(pal)-p-1]:
-                palindrome = True
-        if palindrome == False:
-            print(f'{pal} is not a palindrome.')
-        else:
-            print(f"{pal} is a palindrome.")
+                palindrome = f"{pal} is a palindrome."
+            else:
+                palindrome = f"{pal} is not a palindrome."
+        print(palindrome)
 
 if __name__ == "__main__":
-    main(palindrome)
+    main()
