@@ -176,4 +176,7 @@ pyrightconfig.json
 # Debugger file
 launch.json
 
+# any MISC files
+notes.txt
+
 # End of https://www.toptal.com/developers/gitignore/api/python
